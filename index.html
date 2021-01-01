@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Catalogo Slider HTML CSS JQuery</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-theme.css">
+</head>
+<body>
+
+    <div class="box_container">
+
+        <h1>Netflix</h1>
+
+        <div class="post_container">
+            
+            <div class="post_container_single" style="background-image: url('img/banner1.jpg');"></div><!--post single-->
+            <div class="post_container_single" style="background-image: url('img/banner2.jpg');"></div><!--post single-->
+            <div class="post_container_single" style="background-image: url('img/banner3.jpg');"></div><!--post single-->
+            <div class="post_container_single" style="background-image: url('img/banner4.jpg');"></div><!--post single-->
+
+            <div class="post_container_single" style="background-image: url('img/banner5.jpg');"></div><!--post single-->
+            <div class="post_container_single" style="background-image: url('img/banner6.jpg');"></div><!--post single-->
+            <div class="post_container_single" style="background-image: url('img/banner7.jpg');"></div><!--post single-->
+
+        </div><!---post container -->
+
+
+    </div><!--- box -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="jquery-migrate.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <script type="text/javascript">
+        $(function(){
+           $('.post_container').slick({
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            speed: 1000,
+            autoplay:true,
+            autoplaySpeed: 2000,
+            centerMode:true,
+            centerPadding:'100px',
+            accessibility:true,
+            dotsClass:'slick-dots',
+            fade:false,
+            touchMove:true
+            
+           });
+        })
+    </script>
+</body>
+</html>
